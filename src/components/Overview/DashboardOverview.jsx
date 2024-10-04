@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import useDashboardData from '../../hooks/useDashboardData';
 import SideBar from '../SideBar/SideBar';
+import Navbar from '../Common/Navbar';
 
 const Dashboard = () => {
     const { data, loading, error } = useDashboardData();
@@ -15,7 +16,7 @@ const Dashboard = () => {
         }>
             <SideBar />
             <main className="flex-1 overflow-hidden lg:ml-64">
-                
+                <Navbar/>
             </main>
         </div>
     );
